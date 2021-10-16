@@ -1,0 +1,418 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+  
+  
+  #scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(134, 199, 118);
+    color: midnightblue;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+  }
+  
+  #scrollButton:hover {
+    background-color: lightgray; /* Add a background on hover */
+  }
+  
+   /* Custom shapes sourced from online to create playful page dividing effect */
+  .custom-shape-divider-bottom-1617894266 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1617894266 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1px);
+    height: 157px;
+    transform: rotateY(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1617894266 .shape-fill {
+    fill: #5d80cc;
+  }
+  
+  .custom-shape-divider-bottom-1617893977 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1617893977 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1px);
+    height: 107px;
+    transform: rotateY(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1617893977 .shape-fill {
+    fill: #3764c5;
+  }
+  
+  
+  /* Header of homepage */
+  .home-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)),url('gogreen2.jpeg');
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Styling navigation bar */
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+  }
+  
+   .nav-links {
+    flex: 1;
+    text-align:left;
+    float: left;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .nav-links ul li a {
+    color:rgb(240, 242, 245);
+    text-decoration:none;
+    font-size:22px;
+  }
+  
+  /* Added interactivity - colourful line appears on hover */
+  .nav-links ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background: #f28500;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width:100%;
+  }
+  
+  .nav-links ul li:hover {
+    background-color: rgb(109, 162, 223);
+  }
+  
+  .text-box {
+    width: 100%;
+    color:whitesmoke;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box h1 {
+    font-size: 62px;
+  }
+  
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: whitesmoke
+  }
+  
+  .text-box .fa{
+    font-size: 50px;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1.5px solid #fff;
+    padding: 12px 34px;
+    font-size: 22px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .hero-btn:hover {
+    background-color:rgb(109, 162, 223);
+    transition: 1s;
+  }
+  
+  nav .fa{
+    display:none;
+  }
+  
+  @media(max-width:700px) {
+    .nav-links a {
+      float:none;
+      display:block;
+    }
+  }
+  
+ 
+
+  /* Page footer */
+  footer {
+    background-color: transparent;
+    border-top: solid 1px #3764c5;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  /* Small print text for footer */
+  small {
+    color: #2a529c;
+  }
+  
+  
+  /* About Us section - used Flex rows and columns to align page items consistently */
+  .about-us{
+    width: 80%;
+    margin:auto;
+    text-align:center;
+    padding-top: 20px;
+    position:relative;
+  }
+  
+  .about-us h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #3764c5;
+  }
+  
+  p {
+    color:#2a529c;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  
+  .row {
+    margin-top:5%;
+    display: flex;
+    justify-content:space-between;
+    border: 1px ;
+  }
+  
+  .our-work-col {
+    flex-basis:31%;
+    background: rgb(225, 239, 253);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+  }
+  
+  h3 {
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+    color:#3764c5;
+    font-size: 18px;
+  }
+  
+  .our-work-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+  
+  .our-work-col .fa{
+    color:rgb(83, 121, 226);
+    font-size:3em;
+    padding:10px;
+  }
+  
+  @media(max-width: 700px){
+    .row{
+      flex-direction:column;
+    }
+  }
+  
+
+  .intro {
+    width: 80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+    position:relative;
+  }
+  
+  .intro h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #3764c5;
+  }
+  
+  .intro-col{
+    flex-basis:32%;
+    margin-bottom:30px;
+    position:relative;
+    overflow: hidden;
+  }
+  
+  .intro-col img{
+    width:100%;
+    border-radius: 25px;
+  }
+  
+  
+  /* Testimonials section */
+  .testimonials{
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+    text-align:center;
+    position: relative;
+  }
+  
+  .testimonials h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #3764c5;
+  }
+  
+  .test-col{
+    flex-basis:31%;
+    background: rgb(225, 239, 253);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    display:flex;
+  }
+  
+  .test-col p{
+    padding: 0;
+  }
+  
+  .test-col h3{
+    margin-top: 15px;
+    text-align:left;
+  }
+  
+  /* Contact Form for users to send messages */
+  .contact-form {
+    width: 70%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+    display: block;
+  }
+  
+  .contact-form h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #3764c5;
+  }
+  
+  .contact-form .row{
+    background-color: rgb(225, 239, 253);
+    border-radius: 15px;
+  }
+  
+  form {
+    margin-top: 10px;
+    text-align:left;
+    font-size: 17px;
+    color: #3764c5;
+    border: none;
+  }
+  
+  /* Contact form input styling */
+  input[type=email], input[type=text], textarea, select {
+    width: 92%;
+    padding: 12px;
+    outline: none;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: none;
+    border-radius: 25px;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(109, 162, 223);
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size:15px;
+    border: none;
+    border-radius: 25px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #3764c5;
+    transition: 1s;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+ 
+
+  .placeholder {
+    width:80%;
+    margin:100px auto;
+    text-align:center;
+    background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)),url('/clouds1.jpg');
+    background-position: center;
+    background-size:cover;
+    border-radius:10px;
+    padding: 100px 0;
+    position:relative;
+  }
+  
+  .placeholder h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fefeff;
+    margin-bottom: 40px;
+    padding:0;
+  }
+  
+  @media(max-width: 700px){
+    .placeholder h1{
+      font-size:24px;
+    }
+  }
+  
