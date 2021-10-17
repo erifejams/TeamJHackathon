@@ -30,35 +30,20 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#eventHeader">Events</a></li>
+                    <li><a href="#Weeklytaskheader">Weekly Task</a></li>
                     <li><a href="#contactUs">Contact</a></li>
                 </ul>
             </div>
         </nav>
 		
 		
-		<div class="dropdown">
-			<button class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Select answer...
-			</button>
-			<div class ="dropdown-content">
-			
-				<a class="dropdown-item" href="#">Car(One Passenger)</a>
-				<a class="dropdown-item" href="#">Car(Two or More Passengers)</a>
-				<a class="dropdown-item" href="#">Train</a>
-				<a class="dropdown-item" href="#">Bus</a>
-				<a class="dropdown-item" href="#">Electric Car</a>
-				<a class="dropdown-item" href="#">Tube</a>
-				<a class="dropdown-item" href="#">Motorcycle</a>
-				<a class="dropdown-item" href="#">Bicycle</a>
-				<a class="dropdown-item" href="#">Walking</a>
-			</div>
-		</div>
+		
     </div>
 
     <!--  Container for homepage header and button which takes user to 'About Us' section-->
     <div class="text-box">
         <h1>REPEAT <i class="fa fa-recycle" aria-hidden="true"></i></h1>
-        <p>REDUCE, REUSE, RECYCLE</p>
+        <p>WE MAKE BEING SUSTAINABLE, SUSTAINABLE</p>
         <a href="#about" class="hero-btn">Click here to find out more</a>
     </div>
 
@@ -136,9 +121,9 @@
     </section>
 
     <!-- Weekly Page -->
-    <section class="contact-form" id="contactUs">
+    <section class="contact-form" id="Weeklytaskheader">
         <h1>Welcome to your Weekly Task!<i class="fa fa-hand-paper-o" aria-hidden="true"></i></h1>
-        <p>This week's theme is transport. How much carbon emissions do you transmit when you're travelling? Lets find out :D</p>
+        <p>This week's theme is transport. How much carbon emissions do you transmit when you're travelling? Lets find out &#128515;</p>
         <div class="row">
             <p>
                 Did you know a medium petrol car transmits 192g of carbon per km? Car sharing is a great scheme to help reduce emissions while travelling to work. Just car sharing with one extra passenger
@@ -152,14 +137,28 @@
                 <fieldset>
                     <input type="hidden" id="userId" name="userId" />
                     <label for="name">How did you travel to work today?</label>
-           
+                    <div class="dropdown">
+                        <button class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select answer...
+                        </button>
+                        <div class="dropdown-content">
 
-                    <label for="subject">Subject</label>
+                            <a class="dropdown-item" href="#">Car(One Passenger)</a>
+                            <a class="dropdown-item" href="#">Car(Two or More Passengers)</a>
+                            <a class="dropdown-item" href="#">Train</a>
+                            <a class="dropdown-item" href="#">Bus</a>
+                            <a class="dropdown-item" href="#">Electric Car</a>
+                            <a class="dropdown-item" href="#">Tube</a>
+                            <a class="dropdown-item" href="#">Motorcycle</a>
+                            <a class="dropdown-item" href="#">Bicycle</a>
+                            <a class="dropdown-item" href="#">Walking</a>
+                        </div>
+                    </div>
+                    <p></p>
+
                     <input type="text" id="subject" name="subject" placeholder="">
-                    <label for="email-address">Email Address</label>
-                    <input type="email" id="email-address" name="email-address" placeholder="me@example.com" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message here..." style="height:170px"></textarea>
+                    <label for="barriers">Please input any barriers you have faced with this week's task?</label>
+                    <textarea id="message" name="message" placeholder="Please write any barriers here..." style="height:170px"></textarea>
                     <br>
                     <span><input type="checkbox" id="data-privacy" name="privacy" value="I agree to Terms of Service and Privacy Policy" /> I agree to Terms of Service and Privacy Policy</span><br />
                     <br>
