@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   
 //For dropdown button
+/*
 $(document).ready(function () {
     $(".dropdown-toggle").dropdown();
 });
+*/
