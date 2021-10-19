@@ -185,7 +185,7 @@ body {
 
   /* Page footer */
   footer {
-    background-color: transparent;
+    background-color: #e1eedd;
     border-top: solid 1px #3764c5;
     padding: 10px 10px;
     color: white;
@@ -458,3 +458,14 @@ body {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/*THIS IS THE CODE FOR THE LOGIN PAGE FROM BOOTSTRAP*/
+.socialMedia{
+	margin: 5px;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #52ab98;
+}
