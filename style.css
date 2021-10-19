@@ -136,27 +136,31 @@ nav {
 }
 
 /* User login drop menu on the right side */
+#loginUser.nav-link:focus.nav-link:hover {
+  color: red;
+}
+
 @media(min-width:1160px) {
   #loginUser {
-    margin-left: 35% !important;
+    margin-left: 5% !important;
   }
 }
 
 @media(max-width:1159px) {
   #loginUser {
-    margin-left: 20% !important;
+    margin-left: 1% !important;
   }
 }
 
 @media(max-width:1000px) {
   #loginUser {
-    margin-left: 10%!important;
+    margin-left: 5% !important;
   }
 }
 
 @media(max-width:860px) {
   #loginUser {
-    margin-left: 1%!important;
+    margin-left: 1% !important;
   }
 }
 
@@ -165,11 +169,11 @@ nav {
   color: grey;
 }
 
-.dropdown-menu {
+.dropdown-menu.nav-user{
   background-color: transparent !important;
 }
 
-.dropdown-item:hover {
+.dropdown-item.nav-user-item:hover {
   background-color: transparent !important;
   color: whitesmoke !important;
 }
@@ -285,9 +289,7 @@ small {
   padding-top: 4%
 }
 
-
 /* About Us section - used Flex rows and columns to align page items consistently */
-
 .about-us {
   width: 80%;
   margin: auto;
@@ -296,7 +298,7 @@ small {
   position: relative;
 }
 
-.about-us h1 {
+.about-us h2 {
   font-size: 35px;
   font-weight: 600;
   color: #3764c5;
@@ -377,16 +379,8 @@ h3 {
 }
 
 .our-work-col-2 p {
-  color:#696969;
+  color: #696969;
 }
-
-
-
-
-
-
-
-
 
 .intro {
   width: 80%;
@@ -409,9 +403,6 @@ h3 {
   color: #8cd6a5dc;
   padding-top: 2%;
 }
-
-
-
 
 .intro-col {
   flex-basis: 32%;
@@ -468,14 +459,23 @@ h3 {
   display: block;
 }
 
-.contact-form h1 {
+.contact-form h2 {
   font-size: 35px;
   font-weight: 600;
-  color: #3764c5;
+  /* color: #3764c5; */
+  color: #8cd6a5dc;
 }
 
+.contact-form p {
+  color: grey;
+  padding: 4%
+}
+
+
+
 .contact-form .row {
-  background-color: rgb(225, 239, 253);
+  /*background-color: rgb(225, 239, 253);*/
+  background-color: #daf1e2;
   border-radius: 15px;
 }
 
@@ -483,7 +483,8 @@ form {
   margin-top: 10px;
   text-align: left;
   font-size: 17px;
-  color: #3764c5;
+  /* color: #3764c5; */
+  color: back;
   border: none;
 }
 
@@ -547,6 +548,7 @@ fieldset {
     font-size: 24px;
   }
 }
+
 .placeholder-about {
   width: 80%;
   margin: 100px auto;
@@ -584,6 +586,7 @@ fieldset {
     font-size: 24px;
   }
 }
+
 /*dummy code*/
 /* Dropdown Button */
 .dropbtn {
