@@ -140,27 +140,42 @@ nav {
   color: red;
 }
 
+
 @media(min-width:1160px) {
   #loginUser {
-    margin-left: 5% !important;
+    right: -77%;
+    /*margin-left: 5% !important; */
   }
 }
 
+@media(max-width:1187px) {
+  #loginUser {
+    right: -60%;
+    /*margin-left: 1% !important; */
+  }
+}
+
+
+
+
 @media(max-width:1159px) {
   #loginUser {
-    margin-left: 1% !important;
+    right: -55%;
+    /*margin-left: 1% !important; */
   }
 }
 
 @media(max-width:1000px) {
   #loginUser {
-    margin-left: 5% !important;
+    right: -25%;
+    /*margin-left: 1% !important; */
   }
 }
 
 @media(max-width:860px) {
   #loginUser {
-    margin-left: 1% !important;
+    right: -5%;
+    /*margin-left: 1% !important; */
   }
 }
 
@@ -169,7 +184,7 @@ nav {
   color: grey;
 }
 
-.dropdown-menu.nav-user{
+.dropdown-menu.nav-user {
   background-color: transparent !important;
 }
 
@@ -259,7 +274,7 @@ footer p {
 
 /* Small print text for footer */
 small {
-  color: #2a529c;
+  color: whitesmoke;
 }
 
 /* Line up section*/
@@ -305,7 +320,7 @@ small {
 }
 
 p {
-  color: #2a529c;
+  /*color: #2a529c;*/
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
@@ -335,7 +350,6 @@ h3 {
   margin: 10px 0;
   /* color: #3764c5; */
   /*color: #8cd6a5dc */
-  font-size: 18px;
   color: #56c27a;
   font-size: 18px;
 }
@@ -381,6 +395,11 @@ h3 {
 .our-work-col-2 p {
   color: #696969;
 }
+
+.our-work-col-2 h3 {
+  color: #56c27a;
+}
+
 
 .intro {
   width: 80%;
@@ -468,10 +487,9 @@ h3 {
 
 .contact-form p {
   color: grey;
-  padding: 4%
+  padding: 4%;
+  line-height: 30px;
 }
-
-
 
 .contact-form .row {
   /*background-color: rgb(225, 239, 253);*/
@@ -501,7 +519,7 @@ input[type=email], input[type=text], textarea, select {
 }
 
 input[type=submit] {
-  background-color: rgb(109, 162, 223);
+  background-color: #8cd6a5dc;
   color: white;
   padding: 12px 20px;
   cursor: pointer;
@@ -511,7 +529,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #3764c5;
+  background-color: rgb(25, 112, 86);
   transition: 1s;
 }
 
@@ -598,7 +616,7 @@ fieldset {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+#test.dropdown {
   position: relative;
   display: inline-block;
 }

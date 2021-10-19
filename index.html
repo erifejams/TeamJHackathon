@@ -51,12 +51,12 @@
             <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fas fa-user" id="user"></i>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="LoginPage.html">Log In</a></li>
-              <li><a class="dropdown-item" href="#">Sign Up</a></li>
-              <li><a class="dropdown-item" href="#">Setting</a></li>
-              <li><a class="dropdown-item" href="#">Preferences</a></li>
-              <li><a class="dropdown-item" href="#">Help</a></li>
+            <ul class="dropdown-menu nav-user" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item nav-user-item" href="LoginPage.html">Log In</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Setting</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Preferences</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Help</a></li>
             </ul>
           </li>
         </ul>
@@ -141,7 +141,7 @@
 
   <!-- Weekly Page -->
   <section class="contact-form" id="Weeklytaskheader">
-    <h1>Welcome to your Weekly Task!<i class="fa fa-hand-paper-o" aria-hidden="true"></i></h1>
+    <h2>Welcome to your Weekly Task!<i class="fa fa-hand-paper-o" aria-hidden="true"></i></h2>
     <p>This week's theme is transport. How much carbon emissions do you transmit when you're travelling? Lets find out &#128515;</p>
     <div class="row">
       <p>
@@ -156,8 +156,8 @@
         <fieldset>
           <input type="hidden" id="userId" name="userId" />
           <label for="name">How did you travel to work today?</label>
-          <div class="dropdown">
-            <button class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="dropdown" id="test">
+            <button id="test1" class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Select answer...
             </button>
             <div class="dropdown-content">
@@ -172,7 +172,7 @@
               <a class="dropdown-item" href="#">Walking</a>
             </div>
           </div>
-          <p></p>
+
 
           <input type="text" id="subject" name="subject" placeholder="">
           <label for="barriers">Please input any barriers you have faced with this week's task?</label>
@@ -220,9 +220,9 @@
   </section>
 
   <!--Section to advertise our research-->
-  <section class="placeholder">
-    <h1>Title <i class="" aria-hidden="true"></i> </h1>
-    <a href="" class="hero-btn">Click here to find out more!</a>
+  <section class="placeholder" id="features1">
+    <h1>Feedback <i class="" aria-hidden="true"></i> </h1>
+    <a href="" class="hero-btn">Give us feedback!</a>
   </section>
 
   <footer>
