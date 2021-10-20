@@ -1,33 +1,62 @@
 <!--THIS IS THE LOGIN PAGE-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sustainable App Name</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fontawesome.com/v4.7/icons/">
-    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sustainable App Name Login Page</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
 
-</head>
+	<body>
+		<!--THIS IS THE CODE FROM BOOTSTRAP-->
+		<!--GOT IT FROM HERE: https://mdbootstrap.com/docs/standard/extended/login/-->
+		<section class="vh-100 gradient-custom">
+			<div class="container py-5 h-100">
+				<div class = "box">
+					<div class="row d-flex justify-content-center align-items-center h-100">
+						<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+							<div class="card bg-dark text-white" style="border-radius: 1rem;">
+								<div class="card-body p-5 text-center">
+									<div class="mb-md-5 mt-md-4 pb-5">
+										<h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+										<p class="text-white-50 mb-5">Please enter your login and password!</p>
 
-<body>
+										<div class="form-outline form-white mb-4">
+											<input placeholder = "Email" id="typeEmailX" class="form-control form-control-lg" />
+											<br><br>
+											<input placeholder = "Password" id="typePasswordX" class="form-control form-control-lg" />
+										</div>
 
-   
+										<p><a href="#!">Forgot password?</a></p>
 
-    <footer>
-        <small>&copy; Copyright 2021.<br> ....</small>
-    </footer>
-</body>
-
-<!--Moved to bottom to allow loading of contents prior to execution of JS-->
-<script src="app.js"></script>
+										<button type="submit">Login</button>
+										<br><br>
+										<div>
+										  <p>Don't have an account?<br> Sign Up Using the Social Platform Below</p>
+										</div>
+										
+										<div class = "socialMedia">
+											<a href="https://www.facebook.com/" class="fa fa-facebook"></a>  
+											<a href="https://twitter.com/" class="fa fa-twitter"></a>  
+											<a href="https://accounts.google.com/" class="fa fa-google"></a>  
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<small>&copy; Copyright 2021.<br></small>
+		</footer>
+	</body>
 </html>
 
