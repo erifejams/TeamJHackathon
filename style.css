@@ -71,8 +71,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1617893977 .shape-fill {
-  /* fill: #3764c5; */
-  /* fill: #07ffac; */
+
   fill: #8cd6a5dc;
 }
 
@@ -118,7 +117,6 @@ nav {
   content: '';
   width: 0%;
   height: 2px;
-  /*background: #f28500;*/
   background: #ffcc66;
   display: block;
   margin: auto;
@@ -154,9 +152,6 @@ nav {
     /*margin-left: 1% !important; */
   }
 }
-
-
-
 
 @media(max-width:1159px) {
   #loginUser {
@@ -261,8 +256,7 @@ nav .fa {
 footer {
   background-color: #8cd6a5dc;
   border-top: solid 1px #8cd6a5dc;
-  color:
-    padding: 10px 10px;
+  padding: 10px 10px;
   color: whitesmoke;
   text-align: center;
 }
@@ -433,40 +427,6 @@ h3 {
 .intro-col img {
   width: 100%;
   border-radius: 25px;
-}
-
-/* Testimonials section */
-.testimonials {
-  width: 80%;
-  margin: auto;
-  padding-top: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.testimonials h1 {
-  font-size: 35px;
-  font-weight: 600;
-  color: #3764c5;
-}
-
-.test-col {
-  flex-basis: 31%;
-  background: rgb(225, 239, 253);
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  display: flex;
-}
-
-.test-col p {
-  padding: 0;
-}
-
-.test-col h3 {
-  margin-top: 15px;
-  text-align: left;
 }
 
 /* Contact Form for users to send messages */
@@ -654,7 +614,7 @@ fieldset {
   background-color: #3e8e41;
 }
 
-/*THIS IS THE CODE FOR THE LOGIN PAGE FROM BOOTSTRAP*/
+/*THIS IS THE CODE FOR THE LOGIN PAGE*/
 .socialMedia {
   margin: 5px;
 }
@@ -662,4 +622,39 @@ fieldset {
 .gradient-custom {
   /* fallback for old browsers */
   background: #52ab98;
+}
+
+.try {
+  text-align: right;
+  float: right;
+  width: 1950px;
+  background-color: #8fd6a7;
+}
+
+.try ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+.try ul li a {
+  color: rgb(240, 242, 245);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Added interactivity - colourful line appears on hover */
+.try ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ffcc66;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.try ul li:hover::after {
+  width: 100%;
 }

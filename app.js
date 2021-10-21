@@ -31,9 +31,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.documentElement.scrollTop = 0;
   }
   
-//For dropdown button
-/*
-$(document).ready(function () {
-    $(".dropdown-toggle").dropdown();
-});
-*/
