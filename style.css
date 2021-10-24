@@ -659,3 +659,24 @@ fieldset {
   width: 100%;
 }
 
+.card {
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+	margin-top: 150px;
+}
+
+.card-body {
+	flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+	padding-top: 150%;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
