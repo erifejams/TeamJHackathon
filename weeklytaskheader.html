@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Sustainable, reduce, carbon footprint, go green">
+  <meta name="description" content="We make being sustainable, sustainable">
+  <meta name="author" content="Team-J Hackathon CFG Carbon Footprint 2021">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="style_weeklytask.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!-- not sure-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- fontawesome for icon -->
+  <link rel="stylesheet" href="https://fontawesome.com/v4.7/icons/">
+  <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons">
+  <script src="https://kit.fontawesome.com/e511a75206.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  </link>
+
+  <!--Moved to bottom to allow loading of contents prior to execution of JS-->
+  <script src="app.js"></script>
+
+</head>
+
+<body>
+
+  <!--Button which appears automatically when user scrolls down 25px - enables user to return to top of page instantly-->
+  <button onclick="topFunction()" id="scrollButton" title="Click to go to top of page">Back to Top</button>
+
+  <!--Home header and navigation bar, including internal page links-->
+  <div class="weekly-task-header">
+    <div class="home-header-weeklytask">
+      <nav aria-label="AppTitle">
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#lineUp">Line Up</a></li>
+            <li><a href="#Weeklytaskheader">Weekly Task</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#inclusivity">Inclusivity</a></li>
+            <li class="nav-item dropdown" id="loginUser">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user" id="user"></i>
+              </a>
+              <ul class="dropdown-menu nav-user" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item nav-user-item" href="#">Log Out</a></li>
+                <li><a class="dropdown-item nav-user-item" href="#">Setting</a></li>
+                <li><a class="dropdown-item nav-user-item" href="#">Preferences</a></li>
+                <li><a class="dropdown-item nav-user-item" href="#">Help</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Weekly Page -->
+    <section class="contact-form" id="Weeklytaskheader">
+      <h2>Welcome to your Weekly Task! <i class="fa fa-hand-paper-o" aria-hidden="true"></i></h2>
+      <h3>This week's theme is <u>transport</u>. </h3>
+      <h6>How much carbon emissions do you transmit when you're travelling? </h6>
+      <h6>Lets find out &#128515;</h6>
+      <div class="row">
+        <p>
+          Did you know a medium petrol car transmits 192g of carbon per km? Car sharing is a great scheme to help reduce emissions while travelling to work. Just car sharing with one extra passenger
+          would half your carbon footprint to 96g per km. Even better, travelling by train reduces your carbon footprint even more! Travelling by train only transmits per passenger 41g of carbon per km.
+          Where possible, the best method of transport is walking or cycling, as this has no effect on your carbon footprint, but this can sometimes prove difficult
+          due to distance, disability, and many other reasons. Where possible, the train is the best mode of transport to get to work, if walking and cycling are not an option.
+        </p>
+      </div>
+      <div>
+        <form name="contact-form" action="/add" method="POST">
+          <fieldset>
+            <input type="hidden" id="userId" name="userId" />
+            <label for="name">How did you travel to work today?</label>
+            <div class="dropdown" id="test">
+              <button id="test1" class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Select answer...
+              </button>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="#">Car(One Passenger)</a>
+                <a class="dropdown-item" href="#">Car(Two or More Passengers)</a>
+                <a class="dropdown-item" href="#">Train</a>
+                <a class="dropdown-item" href="#">Bus</a>
+                <a class="dropdown-item" href="#">Electric Car</a>
+                <a class="dropdown-item" href="#">Tube</a>
+                <a class="dropdown-item" href="#">Motorcycle</a>
+                <a class="dropdown-item" href="#">Bicycle</a>
+                <a class="dropdown-item" href="#">Walking</a>
+              </div>
+            </div>
+
+
+            <input type="text" id="subject" name="subject" placeholder="">
+            <label for="barriers">Please input any barriers you have faced with this week's task?</label>
+            <textarea id="message" name="message" placeholder="Please write any barriers here..." style="height:170px"></textarea>
+            <br>
+            <span><input type="checkbox" id="data-privacy" name="privacy" value="I agree to Terms of Service and Privacy Policy" /> I agree to Terms of Service and Privacy Policy</span><br />
+            <br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!--Section to advertise our research-->
+  <section class="placeholder" id="features1">
+    <h1>Feedback <i class="" aria-hidden="true"></i> </h1>
+    <a href="" class="hero-btn">Give us feedback!</a>
+
+  </section>
+
+  <footer>
+    <small>&copy; Copyright 2021.<br></small>
+  </footer>
+</body>
+
+<!--Moved to bottom to allow loading of contents prior to execution of JS-->
+<script src="app.js"></script>
+
+
+</html>
