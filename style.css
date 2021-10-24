@@ -133,11 +133,6 @@ nav {
   color: grey;
 }
 
-/* User login drop menu on the right side */
-#loginUser.nav-link:focus.nav-link:hover {
-  color: red;
-}
-
 
 @media(min-width:1160px) {
   #loginUser {
@@ -501,7 +496,7 @@ fieldset {
   width: 80%;
   margin: 100px auto;
   text-align: center;
-  background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)), url('gogreen1.jpg');
+  background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)), url('pictures/app.jpg');
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -657,4 +652,26 @@ fieldset {
 
 .try ul li:hover::after {
   width: 100%;
+}
+
+.card {
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+	margin-top: 150px;
+}
+
+.card-body {
+	flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+	padding-top: 150%;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
 }

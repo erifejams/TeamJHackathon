@@ -45,7 +45,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#lineUp">Line Up</a></li>
-          <li><a href="#Weeklytaskheader">Weekly Task</a></li>
+          <li><a href="Weeklytaskheader.html#Weeklytaskheader">Weekly Task</a></li>
           <li><a href="#features1">Inclusivity</a></li>
           <li class="nav-item dropdown" id="loginUser">
             <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,7 +54,7 @@
             <ul class="dropdown-menu nav-user" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item nav-user-item" href="LoginPage.html">Log In</a></li>
               <li><a class="dropdown-item nav-user-item" href="#">Sign Up</a></li>
-              <li><a class="dropdown-item nav-user-item" href="#">Setting</a></li>
+              <li><a class="dropdown-item nav-user-item" href="Setting.html">Setting</a></li>
               <li><a class="dropdown-item nav-user-item" href="#">Preferences</a></li>
               <li><a class="dropdown-item nav-user-item" href="#">Help</a></li>
             </ul>
@@ -88,8 +88,8 @@
 
   <section id="about" class="placeholder-about">
     <h1>About Greenspiration <i class="fa fa-recycle" aria-hidden="true"></i> </h1>
-    <p>Here at Greenspiration we believe that small steps, have a big impact and that together we can enact real change. But reducing your carbon footprint can feel overwhelming, time-consuming, expensive and like a drop in the ocean compared with the enormity of the climate crisis. </p> 
-    <p>Constantly tracking and analysing your carbon footprint is not sustainable. Using Greenspiration is! Each week we cover just one key source of carbon emissions, summarise the latest research into a concise and accessible format so everyone can become climate literate. 
+    <p>Here at Greenspiration we believe that small steps, have a big impact and that together we can enact real change. But reducing your carbon footprint can feel overwhelming, time-consuming, expensive and like a drop in the ocean compared with the enormity of the climate crisis. </p>
+    <p>Constantly tracking and analysing your carbon footprint is not sustainable. Using Greenspiration is! Each week we cover just one key source of carbon emissions, summarise the latest research into a concise and accessible format so everyone can become climate literate.
 .</p>
     <p>Your feedback is important to us. By sharing a challenge or barrier you have faced when trying to reduce your carbon footprint, we gain a clearer understanding of climate privilege and where support is needed.</p>
     <a href="LoginPage.html" class="hero-btn" id="about-btn">Click here to get involved!</a>
@@ -141,53 +141,6 @@
     </section>
   </div>
 
-  <!-- Weekly Page -->
-  <section class="contact-form" id="Weeklytaskheader">
-    <h2>Welcome to your Weekly Greenspiration Task!<i class="fa fa-hand-paper-o" aria-hidden="true"></i></h2>
-    <p>This week's theme is transport. How much carbon do you emit when you're travelling? Let's find out &#128515;</p>
-    <div class="row">
-      <p>
-        Did you know a medium petrol car transmits 192g of carbon per km? Car sharing is a great scheme to help reduce emissions while travelling to work. Just car sharing with one extra passenger
-        would half your carbon footprint to 96g per km. Even better, travelling by train reduces your carbon footprint even more! Travelling by train only transmits per passenger 41g of carbon per km.
-        Where possible, the best method of transport is walking or cycling, as this has no effect on your carbon footprint, but this can sometimes prove difficult
-        due to distance, disability, and many other reasons. Where possible, the train is the best mode of transport to get to work, if walking and cycling are not an option.
-      </p>
-    </div>
-    <div>
-      <form name="contact-form" action="/add" method="POST">
-        <fieldset>
-          <input type="hidden" id="userId" name="userId" />
-          <label for="name">How did you travel to work today?</label>
-          <div class="dropdown" id="test">
-            <button id="test1" class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Select answer...
-            </button>
-            <div class="dropdown-content">
-              <a class="dropdown-item" href="#">Car (One Passenger)</a>
-              <a class="dropdown-item" href="#">Car (Two or More Passengers)</a>
-              <a class="dropdown-item" href="#">Train</a>
-              <a class="dropdown-item" href="#">Bus</a>
-              <a class="dropdown-item" href="#">Electric Car</a>
-              <a class="dropdown-item" href="#">Tube</a>
-              <a class="dropdown-item" href="#">Motorcycle</a>
-              <a class="dropdown-item" href="#">Bicycle</a>
-              <a class="dropdown-item" href="#">Walking</a>
-            </div>
-          </div>
-
-
-          <input type="text" id="subject" name="subject" placeholder="">
-          <label for="barriers">Please share any challenges or barriers that you have faced with this week's task</label>
-          <textarea id="message" name="message" placeholder="Please write any challenges or barriers here..." style="height:170px"></textarea>
-          <br>
-          <span><input type="checkbox" id="data-privacy" name="privacy" value="I agree to Terms of Service and Privacy Policy" /> I agree to Terms of Service and Privacy Policy</span><br />
-          <br>
-          <input type="submit" value="Submit">
-        </fieldset>
-      </form>
-    </div>
-  </section>
-
   <!--Need to label images for assistive technology users-->
   <section id="learning" class="intro">
     <h2>Learning</h2>
@@ -221,14 +174,14 @@
   </section>
 
   <!--Section to advertise our research-->
-  <section class="placeholder" id="features1">
-    <h1>Feedback <i class="" aria-hidden="true"></i> </h1>
-    <a href="" class="hero-btn">Give us feedback!</a>
-  </section>
+	<section class="placeholder" id="features1">
+		<h1>Feedback <i class="" aria-hidden="true"></i> </h1>
+		<a href="" class="hero-btn">Give us feedback!</a>
+	</section>
 
-  <footer>
-    <small>&copy; Copyright 2021.<br></small>
-  </footer>
+	<footer>
+		<small>&copy; Copyright 2021.<br></small>
+	</footer>
 </body>
 
 <!--Moved to bottom to allow loading of contents prior to execution of JS-->
