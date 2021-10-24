@@ -65,7 +65,7 @@ function drawChart3() {
       position: 'bottom',
       textStyle: {
         color: 'grey',
-        fontSize: 14
+        fontSize: 14,
       }
     }
   };
