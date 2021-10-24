@@ -25,13 +25,24 @@ function drawChart3() {
   ]);
 
   var options = {
-    title: "Carbon emmision, in kg^2",
+    title: "Tonnes of Carbon dioxide CO2",
+    colors: ['#56c27a', '#ffcc66'],
+    chartArea: {
+      left: 0,
+      top: 0,
+      width: '100%',
+      height: '90%'
+    },
     bar: {
       groupWidth: "85%"
     },
     legend: {
-      position: "bottom"
-    },
+      position: 'bottom',
+      textStyle: {
+        color: 'grey',
+        fontSize: 14,
+      }
+    }
   };
   var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
   chart.draw(view, options);
@@ -56,7 +67,8 @@ function drawChart3() {
   ]);
 
   var optionsAll = {
-    title: "Carbon emmision, in kg^2",
+    title:"Tonnes of Carbon dioxide CO2",
+    colors: ['#56c27a', '#ffcc66'],
     backgroundColor: 'transparent',
     bar: {
       groupWidth: "85%"
