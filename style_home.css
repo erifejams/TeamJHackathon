@@ -88,7 +88,7 @@ body {
 /* Header of homepage */
 .home-header-weeklytask {
   min-height: 20vh;
-  width: 100%;/
+  width: 100%;
   background-color: transparent;
   background-size: cover;
 }
@@ -201,7 +201,9 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  /*text-align: center;*/
+  text-align: left;
+  padding-left: 12%;
 }
 
 .text-box h1 {
