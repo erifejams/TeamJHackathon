@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Sustainable, reduce, carbon footprint, go green">
+  <meta name="description" content="We make being sustainable, sustainable">
+  <meta name="author" content="Team-J Hackathon CFG Carbon Footprint 2021">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="style_home.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!-- not sure-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/e511a75206.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  </link>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="graph.js"></script>
+
+</head>
+
+<body>
+
+  <!--Button which appears automatically when user scrolls down 25px - enables user to return to top of page instantly-->
+  <button onclick="topFunction()" id="scrollButton" title="Click to go to top of page">Back to Top</button>
+
+  <!--Home header and navigation bar, including internal page links-->
+  <div class="home-header">
+    <nav aria-label="AppTitle">
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#progress">Progress</a></li>
+          <li><a href="index.html#lineUp">Line Up</a></li>
+          <li><a href="weeklytaskheader.html#Weeklytaskheader">Weekly Task</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="#inclusivity">inclusivity</a></li>
+          <li class="nav-item dropdown" id="loginUser">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user" id="user"></i>
+            </a>
+            <ul class="dropdown-menu nav-user" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item nav-user-item" href="#">Log Out</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Setting</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Preferences</a></li>
+              <li><a class="dropdown-item nav-user-item" href="#">Help</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--  Container for homepage header and button which takes user to 'About Us' section-->
+  <div class="text-box">
+    <h1>Hello Beazley!</h1>
+    <h2>This <u>Thursday theme is Transport</u></h2>
+    <p>Since 26/10/2021 your have <u>reduced your carbon footprint by 3%!</u></p>
+    <p>What would you like to do today?</p>
+    <a href="#progress" class="hero-btn-home">See progress</a>
+    <a href="weeklytaskheader.html#Weeklytaskheader" class="hero-btn-home">Jump into action</a>
+    <a href="#community" class="hero-btn-home">Share with other!</a>
+  </div>
+
+  <!--Custom shape dividers to create 'fun' design. They separate the homepage from rest of sections -->
+  <div class="custom-shape-divider-bottom-1617894266">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div class="custom-shape-divider-bottom-1617893977">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+
+
+  <!-- About section. This section describes the app purpose-->
+  <section id="achievment" class="placeholder-about">
+    <h1>My Progress <i class="fa fa-recycle" aria-hidden="true"></i> </h1>
+    <p>Well done Beazley!</p>
+    <p>By taking a step each Thursday, you have saved 2kg of CO2</p>
+    <p>Since 16/10/2021, you have shared 3 tasks with the community</p>
+    <a href="#progress" class="hero-btn" id="about-btn">Click here to see your stastitic!</a>
+  </section>
+
+  <!-- statistic section-->
+  <div class="background-image">
+    <section class="statistic" id="progress">
+      <h2>My stastitic</h2>
+      <!--Section rows-->
+      <div class="row">
+        <div class="our-work-col-2">
+          <h3>My progress</h3>
+          <div id="columnchart_values"></div>
+          <p>Notes</p>
+          <!-- Aria is hidden on purely decorative icons -->
+
+        </div>
+        <div class="our-work-col-2">
+          <h3>My Data</h3>
+          <div id="columnchart_values_all"></div>
+          <p>Notes</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="our-work-col-2">
+          <h3>My Carbon Footprint</h3>
+          <div class="graph" id="piechart"></div>
+          <p>Report</p>
+        </div>
+        <div class="our-work-col-2">
+          <h3>All users Carbon Footprint</h3>
+          <div id="piechart-all"></div>
+          <p>Report</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!--Section to advertise our research-->
+  <section class="placeholder" id="features1">
+    <h1>Feedback <i class="" aria-hidden="true"></i> </h1>
+    <a href="" class="hero-btn">Give us feedback!</a>
+
+  </section>
+
+  <footer>
+    <small>&copy; Copyright 2021.<br></small>
+  </footer>
+</body>
+<!--Moved to bottom to allow loading of contents prior to execution of JS-->
+<script src="app.js"></script>
+
+</html>

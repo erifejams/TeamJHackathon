@@ -133,11 +133,6 @@ nav {
   color: grey;
 }
 
-/* User login drop menu on the right side */
-#loginUser.nav-link:focus.nav-link:hover {
-  color: red;
-}
-
 
 @media(min-width:1160px) {
   #loginUser {
@@ -501,7 +496,7 @@ fieldset {
   width: 80%;
   margin: 100px auto;
   text-align: center;
-  background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)), url('gogreen1.jpg');
+  background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)), url('pictures/app.jpg');
   background-position: center;
   background-size: cover;
   border-radius: 10px;
