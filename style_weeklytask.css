@@ -61,8 +61,7 @@ nav {
 .nav-links ul li a {
   color: rgb(240, 242, 245);
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 22px;
 }
 
 /* Added interactivity - colourful line appears on hover */
@@ -93,33 +92,41 @@ nav {
   }
 }
 
-@media(max-width:1172px) {
+@media(min-width:1160px) {
   #loginUser {
-    right: -35%;
+    right: -77%;
+    /*margin-left: 5% !important; */
+  }
+}
+
+@media(max-width:1187px) {
+  #loginUser {
+    right: -60%;
     /*margin-left: 1% !important; */
   }
 }
 
 @media(max-width:1159px) {
   #loginUser {
-    right: -25%;
+    right: -55%;
     /*margin-left: 1% !important; */
   }
 }
 
 @media(max-width:1000px) {
   #loginUser {
-    right: -15%;
+    right: -25%;
     /*margin-left: 1% !important; */
   }
 }
 
-@media(max-width:950px) {
+@media(max-width:860px) {
   #loginUser {
-    right: 0%;
+    right: -5%;
     /*margin-left: 1% !important; */
   }
 }
+
 
 /* dropdown user menu */
 #navbarDropdownMenuLink:hover {
