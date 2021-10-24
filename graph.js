@@ -61,6 +61,12 @@ function drawChart3() {
     bar: {
       groupWidth: "85%"
     },
+    chartArea: {
+      left: 0,
+      top: 0,
+      width: '100%',
+      height: '90%'
+    },
     legend: {
       position: 'bottom',
       textStyle: {
