@@ -85,25 +85,21 @@
           <fieldset>
             <input type="hidden" id="userId" name="userId" />
             <label for="name">How did you travel to work today?</label>
-            <div class="dropdown" id="test">
-              <button id="test1" class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Select answer...
-              </button>
-              <div class="dropdown-content">
-                <a class="dropdown-item" href="#">Car(One Passenger)</a>
-                <a class="dropdown-item" href="#">Car(Two or More Passengers)</a>
-                <a class="dropdown-item" href="#">Train</a>
-                <a class="dropdown-item" href="#">Bus</a>
-                <a class="dropdown-item" href="#">Electric Car</a>
-                <a class="dropdown-item" href="#">Tube</a>
-                <a class="dropdown-item" href="#">Motorcycle</a>
-                <a class="dropdown-item" href="#">Bicycle</a>
-                <a class="dropdown-item" href="#">Walking</a>
-              </div>
+            <select id="mySelect">
+              <option>Car(One Passenger)</option>
+              <option>Car(Two or More Passengers)</option>
+              <option>Train</option>
+              <option>Bus</option>
+              <option>Electric Car</option>
+              <option>Tube</option>
+              <option>Motorcycle</option>
+              <option>Bicycle</option>
+              <option>Walking</option>
+            </select>
+            <input type="button" onclick="changeText()" value="Submit answer" class="dropbtn">
+            <div class="row-2">
+              <p id="subject" name="subject"></p>
             </div>
-
-
-            <input type="text" id="subject" name="subject" placeholder="">
             <label for="barriers">Please input any barriers you have faced with this week's task?</label>
             <textarea id="message" name="message" placeholder="Please write any barriers here..." style="height:170px"></textarea>
             <br>

@@ -367,6 +367,7 @@ h3 {
   flex-basis: 46%;
   /*background: rgb(225, 239, 253);*/
   background: #daf1e2;
+  opacity: 0.8;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -385,7 +386,8 @@ h3 {
 }
 
 .our-work-col-2 p {
-  color: #696969;
+  /*color: #696969;*/
+  color: #303030;
 }
 
 .our-work-col-2 h3 {
