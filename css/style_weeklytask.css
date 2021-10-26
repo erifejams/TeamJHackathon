@@ -194,13 +194,13 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
-  padding: 10px;
+  padding-bottom: 0px;
 }
 
 /* weekly task */
 .weekly-task-header {
   /*background-image: linear-gradient(rgba(18, 38, 70, 0.7), rgba(1, 7, 29, 0.7)), url('pictures/diversity2.jpg');*/
-  background-image: linear-gradient(rgba(77, 172, 146, 0.2),rgba(1, 7, 29, 0.7) 55%), url('pictures/diversity2.jpg');
+  background-image: linear-gradient(rgba(77, 172, 146, 0.2),rgba(1, 7, 29, 0.7) 55%), url('../pictures/diversity2.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -353,7 +353,7 @@ h3 {
   width: 80%;
   margin: 100px auto;
   text-align: center;
-  background-image: linear-gradient(rgba(18, 38, 70, 0.6), rgba(1, 7, 29, 0.6)), url('pictures/app.jpg');
+  background-image: linear-gradient(rgba(18, 38, 70, 0.6), rgba(1, 7, 29, 0.6)), url('../pictures/app.jpg');
   background-position: center;
   background-size: cover;
   border-radius: 10px;
