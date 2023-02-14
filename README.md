@@ -1,5 +1,5 @@
 # TeamJHackathon - Greenspiration
-Team J Hackathon - CFG x Beazley Hack your Carbon Footprint.// 
+Team J Hackathon - CFG x Beazley Hack your Carbon Footprint. <br>
 The **aim** of this project is to help employees reduce their carbon footprint in the company. 
 
 # Idea
