@@ -2,8 +2,8 @@
 Team J Hackathon - CFG x Beazley Hack your Carbon Footprint. 
 The **aim** of this project is to help employees reduce their carbon footprint in the company. 
 
-#Idea
-
+# Idea
+![website starting page](https://github.com/erifejams/TeamJHackathon/blob/main/pictures/websiteVisual.png)
 - The webiste is a one day website where it is only available for one day per week for employees. The employees are given weekly task to reduce their carbon footprint.
 - The weekly theme is changed each week e.g transport, food etc.
 - They can compare their carbon footprint against other employees in the company.
